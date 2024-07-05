@@ -89,3 +89,6 @@ Vertex Study Point is a software designed to automate the management of a readin
 - Designed and developed a modern website for a study hall booking system.
 - Implemented features such as seat booking, food membership, payment system integration, and mail notifications.
 - Utilized HTML, CSS, AJAX, JavaScript, JSP, JAVA, MySQL for development.
+
+ ##Feel free to contribute and raise issues if you find any!
+Happy Coding!
