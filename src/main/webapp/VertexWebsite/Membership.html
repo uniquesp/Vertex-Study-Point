@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>VertexStudyPoint</title>
+    <!---Custom CSS File--->
+    <link rel="icon" type="image/x-icon" href="../Admin/assets/images/bookicon11.jpg">
+    <link rel="stylesheet" href="css/Membership.css" />
+    <script>
+      function memChoice()
+      {
+          var ch = document.getElementById("m_name").value;
+          
+          if(ch=="Recomendade")
+          {
+            document.getElementById("m_facility").value="Only Tea/Coffee,Biscuits 3 Times a Day";
+            document.getElementById("m_price").value=400;
+            document.getElementById("amt").value=700;
+          }
+          else if(ch=="Basic")
+          {
+            document.getElementById("m_facility").value="No Food, Only Ragistration Fee";
+            document.getElementById("m_price").value=300;
+            document.getElementById("amt").value=600;
+          }
+          else if(ch=="Premium")
+          {
+            document.getElementById("m_facility").value="Lunch, Only Tea/Coffee 2 Times a Day";
+            document.getElementById("m_price").value=500;
+            document.getElementById("amt").value=800;
+          }
+          else if(ch=="Pro")
+          {
+            document.getElementById("m_facility").value="Dinner, Only Tea/Coffee,2 Times a Day";
+            document.getElementById("m_price").value=600;
+            document.getElementById("amt").value=900;
+          }
+          else if(ch=="Best")
+          {
+            document.getElementById("m_facility").value="Breakfast Only Tea/Coffee, 3 Times a Day";
+            document.getElementById("m_price").value=450;
+            document.getElementById("amt").value=750;
+          }
+      };
+//     function handleDate()
+//       {
+// setTimeout(()=> {
+//           var sDate=document.getElementById("startDate").value;
+// var date = new Date(sDate);
+// var strDate = date.getYear()+"-"+date.getMonth()+"-"+date.getDate();
+// alert(strDate);
+// var eDate=date.setDate(date.getDate+30);
+// alert(eDate);
+// document.getElementById("endDate").value="2023-07-10";
+// },5000);
+//       };
+
+function handleDate(){
+let inpDate="",normalDate="",strDate="",endDate="";
+   setTimeout(() => {
+      inpDate = document.getElementById("startDate").value;
+      normalDate = new Date(inpDate);
+      endDate=normalDate.setDate((normalDate.getDate() + 30));
+      let d = (new Date(endDate)).toLocaleDateString();
+      var arr = d.split('/');
+
+if(arr[0]<10)
+{
+  arr[0]="0"+arr[0];
+}
+if(arr[1]<10)
+{
+  arr[1]="0"+arr[1]
+}
+      strDate = arr[2]+"-"+arr[0]+"-"+arr[1];
+      document.getElementById("endDate").value=strDate; 
+   }, 5000)
+}
+    </script>
+  </head>
+  <body>
+    <section class="container">
+      <header><b>Membership</b></header>
+      <form action="Membership.jsp" class="form">
+
+        <div class="column">
+        <label>Choose Membership</label>
+            <div class="select-box">
+              <select name="m_name" id="m_name" onclick="memChoice()">
+                <option hidden>membership</option>
+                <option value="Recomendade">Recommended</option>
+                <option value="Basic">Basic</option>
+                <option value="Premium">Premium</option>
+                <option value="Pro">Pro</option>
+                <option value="Best">Best</option>
+              </select>
+            </div>
+        </div>
+
+        <div class="input-box">
+        <label>Membership Facility</label>
+            <input type="text" id="m_facility"  name="m_facility" readonly required/>
+        </div>
+
+      <div class="column">
+        <div class="input-box">
+          <label>Membership Price</label>
+          <input type="text" placeholder="Price" id="m_price" name="m_price" readonly required />
+        </div>
+    <div class="input-box">
+          <label>Deposite</label>
+          <input type="text" placeholder="Price" value="300" name="m_deposit" readonly required />
+        </div>
+</div>
+
+         <div class="column">
+          <div class="input-box">
+            <label>Start Date</label>
+            <input type="date" placeholder="Enter start date" name="startDate" onclick="handleDate()" id="startDate" required />
+          </div>
+          <div class="input-box">
+            <label>End Date</label>
+            <input type="date" placeholder="Enter end date" name="endDate" id="endDate" readonly   required />
+          </div>
+        </div>
+
+  <div class="column">
+      <div class="input-box">
+          <label>Total Days</label>
+          <input type="text" placeholder="Total Days" name="totalDays" value="30" readonly required />
+        </div>
+  <div class="input-box">
+          <label>Total amount</label>
+          <input type="text" placeholder="Total amount" id="amt" name="amt"  readonly required />
+        </div>
+</div>
+    <br><br><button>Proceed To Payment</button>
+      </form>
+    </section>
+  </body>
+</html>

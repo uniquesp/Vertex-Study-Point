@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Admin/assets/images/bookicon11.jpg">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/successtory.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Vertex-Student-Dashboard</title>
+</head>
+<body class="body">
+    <section class="header">
+        <div class="logo">
+            <i class="ri-menu-line menu"></i>
+            <h2><span>V</span> -Vertex.</h2>
+        </div>
+        <div class="header--items">
+            <div class="dark--theme--btn">
+                <i class="ri-moon-line moon"></i>
+                <i class="ri-sun-line sun"></i>
+            </div>
+            <i class="ri-notification-2-line"></i>
+            <div class="profile">
+                <img src="assets/images/profile.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="sidebar">
+            <ul class="sidebar--items">
+                <li>
+                    <a href="Sindex.jsp" >
+                        <span class="icon"><i class="ri-user-fill"></i></span>
+                        <div class="sidebar--item">Profile Details</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="renewMemb.html" >
+                        <span class="icon"><i class="ri-bank-card-line"></i></span>
+                        <div class="sidebar--item">Renew Membership</div>
+                    </a>
+                </li>
+                
+            
+                <li>
+                    <a href="feedback.html">
+                        <span class="icon"><i class="ri-feedback-line"></i></span>
+                        <div class="sidebar--item">Feedback</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="sucesstory.html">
+                        <span class="icon"><i class="ri-trophy-line"></i></span>
+                        <div class="sidebar--item">sucesstory</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="leaveform.html" class="active">
+                        <span class="icon"><i class="ri-survey-line"></i></span>
+                        <div class="sidebar--item">Leave Form</div>
+                    </a>
+                </li>
+                
+            </ul>
+            <ul class="sidebar--bottom--items">
+                
+                <li>
+                    <a href="../VertexWebsite/index.html" >
+                        <span class="icon"><i class="ri-logout-box-r-line"></i></span>
+                        <div class="sidebar--item">Logout</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main--container">
+            <div class="section--title">
+                
+                
+            <br>
+            
+            </div>
+
+            <section class="container">
+                <header><b>VertexStudyPoint</b></header>
+                <form action="leaveform.jsp" method="POST" class="form">
+          
+                  <div class="input-box">
+                    <label>Full Name</label>
+                    <input type="text" name="fname" placeholder="Enter full name" pattern="[Aa-Zz]" required />
+                  </div>
+          
+         <div class="hall-box">
+<label for="hall-type">Select Hall Type:</label>
+<div id="hall-type">
+  <input type="radio" id="achall" name="hall-type" value="ac_hall">
+  <label for="achall">AC Hall</label>
+  <input type="radio" id="nonachall" name="hall-type" value="nonac_hall">
+  <label for="nonachall">Non-AC Hall</label>
+  <input type="radio" id="newhall" name="hall-type" value="new_hall">
+  <label for="newhall">New Hall</label>
+</div>
+</div>
+          
+          
+                  <div class="column">
+                  <div class="input-box">
+                    <label>Seat No</label>
+                    <input type="text" name="seatno" placeholder="Enter seat no" required />
+                  </div>
+                </div> 
+                  <div class="column">
+                   <div class="input-box">
+                    <label>Phone No</label><br>
+                    <input type="tel"  name="pno" placeholder="phone no" pattern="[789][0-9]{9}" required/>
+                  </div>
+                  <div class="input-box">
+                    <label>Leaving Date</label><br>
+                    <input type="date"  name="ldate" placeholder="date" required/>
+                  </div>
+              </div>
+              <h1>Your Deposite will send to your account very soon...</h1>
+                  <br><br><button>Submit</button>
+                </form>
+              </section>
+        </div>
+    </section>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

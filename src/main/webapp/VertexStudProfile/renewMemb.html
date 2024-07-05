@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../Admin/assets/images/bookicon11.jpg">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/successtory.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Vertex-Student-Dashboard</title>
+     <script>
+      function memChoice()
+      {
+          var ch = document.getElementById("m_name").value;
+          
+          if(ch=="Recomendade")
+          {
+            document.getElementById("m_facility").value="Only Tea/Coffee,Biscuits 3 Times a Day";
+            document.getElementById("m_price").value=400;
+            document.getElementById("amt").value=700;
+          }
+          else if(ch=="Basic")
+          {
+            document.getElementById("m_facility").value="No Food, Only Ragistration Fee";
+            document.getElementById("m_price").value=300;
+            document.getElementById("amt").value=600;
+          }
+          else if(ch=="Premium")
+          {
+            document.getElementById("m_facility").value="Lunch, Only Tea/Coffee 2 Times a Day";
+            document.getElementById("m_price").value=500;
+            document.getElementById("amt").value=800;
+          }
+          else if(ch=="Pro")
+          {
+            document.getElementById("m_facility").value="Dinner, Only Tea/Coffee,2 Times a Day";
+            document.getElementById("m_price").value=600;
+            document.getElementById("amt").value=900;
+          }
+          else if(ch=="Best")
+          {
+            document.getElementById("m_facility").value="Breakfast Only Tea/Coffee, 3 Times a Day";
+            document.getElementById("m_price").value=450;
+            document.getElementById("amt").value=750;
+          }
+      };
+//     function handleDate()
+//       {
+// setTimeout(()=> {
+//           var sDate=document.getElementById("startDate").value;
+// var date = new Date(sDate);
+// var strDate = date.getYear()+"-"+date.getMonth()+"-"+date.getDate();
+// alert(strDate);
+// var eDate=date.setDate(date.getDate+30);
+// alert(eDate);
+// document.getElementById("endDate").value="2023-07-10";
+// },5000);
+//       };
+
+function handleDate(){
+let inpDate="",normalDate="",strDate="",endDate="";
+   setTimeout(() => {
+      inpDate = document.getElementById("startDate").value;
+      normalDate = new Date(inpDate);
+      endDate=normalDate.setDate((normalDate.getDate() + 30));
+      let d = (new Date(endDate)).toLocaleDateString();
+      var arr = d.split('/');
+
+if(arr[0]<10)
+{
+  arr[0]="0"+arr[0];
+}
+if(arr[1]<10)
+{
+  arr[1]="0"+arr[1]
+}
+      strDate = arr[2]+"-"+arr[0]+"-"+arr[1];
+      document.getElementById("endDate").value=strDate; 
+   }, 5000)
+}
+
+
+function validDate() {
+    var UserDate = document.getElementById("date").value;
+    var ToDate = new Date();
+
+    setTimeout(() => {
+      if (new Date(UserDate).getTime() <= ToDate.getTime()) {
+          alert("The Date must be Bigger or Equal to today date");
+          return false;
+      }
+      return true;
+    }, 5000)
+}
+    </script>
+</head>
+<body class="body">
+    <section class="header">
+        <div class="logo">
+            <i class="ri-menu-line menu"></i>
+            <h2><span>V</span> -Vertex.</h2>
+        </div>
+        <div class="header--items">
+            <div class="dark--theme--btn">
+                <i class="ri-moon-line moon"></i>
+                <i class="ri-sun-line sun"></i>
+            </div>
+            <i class="ri-notification-2-line"></i>
+            <div class="profile">
+                <img src="assets/images/profile.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="sidebar">
+            <ul class="sidebar--items">
+                <li>
+                    <a href="Sindex.jsp" >
+                        <span class="icon"><i class="ri-user-fill"></i></span>
+                        <div class="sidebar--item">Profile Details</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../VertexStudProfile/renewMemb.html" class="active">
+                        <span class="icon"><i class="ri-bank-card-line"></i></span>
+                        <div class="sidebar--item">Renew Membership</div>
+                    </a>
+                </li>
+               
+                <li>
+                    <a href="../VertexStudProfile/feedback.html">
+                        <span class="icon"><i class="ri-feedback-line"></i></span>
+                        <div class="sidebar--item">Feedback</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="sucesstory.html">
+                        <span class="icon"><i class="ri-trophy-line"></i></span>
+                        <div class="sidebar--item">sucesstory</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="leaveform.html">
+                        <span class="icon"><i class="ri-survey-line"></i></span>
+                        <div class="sidebar--item">Leave Form</div>
+                    </a>
+                </li>
+                
+            </ul>
+            <ul class="sidebar--bottom--items">
+                
+                <li>
+                    <a href="../VertexWebsite/index.html" >
+                        <span class="icon"><i class="ri-logout-box-r-line"></i></span>
+                        <div class="sidebar--item">Logout</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main--container">
+            <div class="section--title">                
+            <br>
+            
+            </div>
+
+           <section class="container">
+      <header><b>Renew Membership</b></header>
+      <form action="renewMembership.jsp" class="form">
+
+        <div class="column">
+        <label>Choose Membership</label>
+            <div class="select-box">
+              <select name="m_name" id="m_name" onclick="memChoice()">
+                <option hidden>membership</option>
+                <option value="Recomendade">Recommended</option>
+                <option value="Basic">Basic</option>
+                <option value="Premium">Premium</option>
+                <option value="Pro">Pro</option>
+                <option value="Best">Best</option>
+              </select>
+            </div>
+        </div>
+
+        <div class="input-box">
+        <label>Membership Facility</label>
+            <input type="text" id="m_facility"  name="m_facility" readonly required/>
+        </div>
+
+      <div class="column">
+        <div class="input-box">
+          <label>Membership Price</label>
+          <input type="text" placeholder="Price" id="m_price" name="m_price" readonly required />
+        </div>
+    <div class="input-box">
+          <label>Fine</label>
+          <input type="text" placeholder="Price" value="300" name="m_fine" readonly required />
+        </div>
+</div>
+
+         <div class="column">
+          <div class="input-box">
+            <label>Start Date</label>
+            <input type="date" placeholder="Enter start date" name="startDate" onclick="handleDate(),validDate()" id="startDate" required />
+          </div>
+          <div class="input-box">
+            <label>End Date</label>
+            <input type="date" placeholder="Enter end date" name="endDate" id="endDate" readonly   required />
+          </div>
+        </div>
+
+  <div class="column">
+      <div class="input-box">
+          <label>Total Days</label>
+          <input type="text" placeholder="Total Days" name="totalDays" value="30" readonly required />
+        </div>
+  <div class="input-box">
+          <label>Total amount</label>
+          <input type="text" placeholder="Total amount" id="amt" name="amt"  readonly required />
+        </div>
+</div>
+    <br><br><button>Proceed To Payment</button>
+      </form>
+    </section>
+        </div>
+    </section>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

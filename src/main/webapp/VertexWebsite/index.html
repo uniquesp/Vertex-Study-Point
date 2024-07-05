@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertex Study Point</title>
+	<link rel="icon" type="image/x-icon" href="../Admin/assets/images/bookicon11.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../VertexWebsite/css/style.css">
+</head>
+
+<body>
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <div class="header-1">
+
+            <a href="#" class="logo"> <i class="fas fa-book"></i> Vertex </a>
+
+            <form action="" class="search-form">
+                <input type="search" name="" placeholder="search here..." id="search-box">
+                <label for="search-box" class="fas fa-search"></label>
+            </form>
+
+            <div class="icons">
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="login-btn" class="fas fa-user"></div>
+                <!-- <div id="admin-btn" class="fab fa-buysellads"></div> -->
+            </div>
+
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#featured">membership</a>
+                <a href="#arrivals">about us</a>
+                <a href="#reviews">reviews</a>
+                <a href="#blogs">StarsStory</a>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- bottom navbar  -->
+
+    <nav class="bottom-navbar">
+        <a href="#home" class="fas fa-home"></a>
+        <a href="#featured" class="fas fa-list"></a>
+        <a href="#arrivals" class="fas fa-tags"></a>
+        <a href="#reviews" class="fas fa-comments"></a>
+        <a href="#blogs" class="fas fa-blog"></a>
+    </nav>
+
+    <!-- login form  -->
+
+    <div class="login-form-container">
+
+        <div id="close-login-btn" class="fas fa-times"></div>
+
+        <form action="signIn.jsp">
+            <h3>sign in</h3>
+            <span>username</span>
+            <input type="email" name="user" class="box" placeholder="enter your email" id="">
+            <span>password</span>
+            <input type="password" name="pass" class="box" placeholder="enter your password" id="">
+            <div class="checkbox">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me"> remember me</label>
+            </div>
+            <input type="submit" value="sign in" class="btn">
+            <p>forget password ? <a href="#">click here</a></p>
+            <p>don't have an account ? <a href="Ragistration1.jsp">create one</a></p>
+        </form>
+
+    </div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="row">
+
+            <div class="content">
+                <h3>it's Never too late to learn</h3>
+                <p>we Deliver High Quality Services that Contribute to the Successful Education And Reaserch of
+                    the University And Wider Community.
+                    "We are here to help you to Complete Your Goals"</p>
+                <a href="Ragistration1.jsp" class="btn">BookYourSeat</a>
+            </div>
+
+            <div class="swiper books-slider">
+                <div class="swiper-wrapper">
+                    <a href="#" class="swiper-slide"><img src="image/book-1.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="image/book-2.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="image/book-3.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="image/book-4.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="image/book-5.png" alt=""></a>
+                    <a href="#" class="swiper-slide"><img src="image/book-6.png" alt=""></a>
+                </div>
+                <img src="image/stand.png" class="stand" alt="">
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- home section ense  -->
+
+    <!-- icons section starts  -->
+
+    <section class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-shipping-fast"></i>
+            <div class="content">
+                <h3>WiFi 5G</h3>
+                <p>SuperFast Internet</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-lock"></i>
+            <div class="content">
+                <h3>secure payment</h3>
+                <p>100 secure payment</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-redo-alt"></i>
+            <div class="content">
+                <h3>easy returns</h3>
+                <p>10 days returns</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-headset"></i>
+            <div class="content">
+                <h3>24/7 support</h3>
+                <p>Learn as per your time</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- icons section ends -->
+
+    <!-- featured section starts  -->
+
+    <section class="featured" id="featured">
+
+        <h1 class="heading"> <span>Memberships</span> </h1>
+
+        <div class="swiper featured-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <h1>only Tea/Coffee</h1>
+                        <h1>Biscuits</h1>
+                        <h1>3 times in a day</h1>
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h1>400</h1>
+                        </div>
+                        <a href="#" class="btn" style="background-color: yellow; color: black;">Recommended</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <h1>Lunch</h1>
+                        <h1>Tea/Coffee</h1>
+                        <h1>Tea only 2 times in a day</h1>
+
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h1>500</h1>
+                        </div>
+                        <a href="#" class="btn" style="background-color: red; color: black;">Premium</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <h1>Dinner</h1>
+                        <h1>Tea/Coffee</h1>
+                        <h1>Tea only 2 times in a day</h1>
+
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h1>600</h1></span>
+                        </div>
+                        <a href="#" class="btn" style="background-color: blue; color: black;">Pro</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image1">
+                        <h1>BreakFast</h1>
+                        <h1>Tea/Coffee</h1>
+                        <h1>Tea only 2 times in a day</h1>
+
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h1>450</h1>
+                        </div>
+                        <a href="#" class="btn" style="background-color: rgb(169, 42, 169); color: black;">Best</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image1">
+                        <h1>No Food</h1>
+                        <h1>Study hard</h1>
+                        <h1>Just Ragistration Fee</h1>
+                    </div>
+                    <div class="content">
+                        <div class="price">
+                            <h1>300</h1>
+                        </div>
+                        <a href="#" class="btn" style="background-color: rgb(233, 128, 176); color: black;">Basic</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+    </section>
+
+    <!-- featured section ends -->
+
+    <!-- newsletter section starts -->
+
+    <section class="newsletter">
+
+        <form action="">
+            <h3>subscribe for latest updates</h3>
+            <input type="email" name="" placeholder="enter your email" id="" class="box">
+            <input type="submit" value="subscribe" class="btn">
+        </form>
+
+    </section>
+
+    <!-- newsletter section ends -->
+
+    <!-- arrivals section starts  -->
+
+    <section class="arrivals" id="arrivals">
+
+        <h1 class="heading"> <span>About us</span> </h1>
+
+        <div class="swiper arrivals-slider">
+
+            <div class="swiper-wrapper">
+
+                <a href="image2/oimg8.jpg" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image2/img1.jpg" alt="">
+                    </div>
+                </a>
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image2/img2.jpg" alt="">
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image2/img3.jpg" alt="">
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image2/img4.jpg" alt="">
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image2/img5.jpg" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="swiper arrivals-slider">
+
+            <div class="swiper-wrapper">
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image2/img6.jpg" alt="">
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image2/img7.jpg" alt="">
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide box">
+                    <div class="image">
+                        <img src="image2/img8.jpg" alt="">
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- arrivals section ends -->
+
+    <!-- deal section starts  -->
+
+    <section class="deal">
+
+        <div class="content">
+            <h1>Vertex Study Point</h1>
+            <h3>To Genrate Stars on The Earth</h3>
+            <p>Our Motive is to provide the Best environment to students for study along with all the necessary
+                facilities.</p>
+            <a href="#blogs" class="btn">OurStars</a>
+        </div>
+
+        <div class="image">
+            <img src="image2/dupimg.jpg" alt="">
+        </div>
+
+    </section>
+
+    <!-- deal section ends -->
+
+    <!-- reviews section starts  -->
+
+    <section class="reviews" id="reviews">
+
+        <h1 class="heading"> <span>Student's reviews</span> </h1>
+
+        <div class="swiper reviews-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="image/pic-1.png" alt="">
+                    <h3>Mohit Sane</h3>
+                    <p>"This is the good place for those who loves reading different kind of collections of Books. In
+                        Vertex the variety of Books is vast and ypu can read almost all kind of books to enhenc your
+                        knowledge. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/pic-2.png" alt="">
+                    <h3>Suhani Chudhari</h3>
+                    <p>"Best Study room Vertex offers.Love the Comfy chairs as well! Huge desk,internet connection,your
+                        own privacy and space. It's Perfect!! And all the books you need nearby."</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/pic-3.png" alt="">
+                    <h3>Priyank Shevate</h3>
+                    <p>"I have been coming to this library for 3 year and have never encountered the level of support
+                        and service offered here elsewhere. Keep Up The Good Work!!"</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="image/pic-4.png" alt="">
+                    <h3>Spruha Kulkarni</h3>
+                    <p>"This is the most calming, respectful, place I've been to. What's more the staffs are the most
+                        welcoming and friendly.They always greet you, deal with your needs and try to solve every
+                        problem. Thank you for the effort to make this a beautiful place to learn." </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/pic-5.png" alt="">
+                    <h3>Rushi Kadam</h3>
+                    <p>Vertex is a rare gem. So Lovely, So peaceful, A place where you can actually think and feel and
+                        be
+                        creative, the Slience is rejuvenating, Please don't ever take is away..."</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/pic-6.png" alt="">
+                    <h3>Amruta Kale</h3>
+                    <p>"Amazing Place. amazing people, amazing resources, Absolutely my favourite."</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- reviews section ends -->
+
+    <!-- blogs section starts  -->
+
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"> <span>StarsStory</span> </h1>
+
+        <div class="swiper blogs-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="image2/img11.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Hasan Safin</h3>
+                        <p>Indian Police Service(IPS)</p>
+                        <a href="../VertexWebsite/page3.html" class="btn">read more</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="image2/img14.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Indra Kadam</h3>
+                        <p>IBPS Officer at Kotak Mahindra Bank</p>
+                        <a href="../VertexWebsite/page1.html" class="btn">read more</a>
+                    </div>
+                </div>
+                 <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="image2/img12.jpeg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Kuldeep Dwivedi</h3>
+                        <p>Indian Police Service(IPS)</p>
+                        <a href="../VertexWebsite/page2.html" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="image2/img15.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Aishwarya Shinde</h3>
+                        <p>AFO in Canara Bank 2021</p>
+                        <a href="../VertexWebsite/page4.html" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="image2/img18.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>INS Vikramaditya</h3>
+                        <p>Air chief marshal at Indian Navy.</p>
+                        <a href="../VertexWebsite/page5.html" class="btn">read more</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- blogs section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Rules</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Keep Your Phones on Silent Mode</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Keep Silence in Library</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Seat on your Ragistreated Seat only</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Convey While Leaving Library</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i>Participate All Programs</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"> <i class="fas fa-arrow-right"></i> Home </a>
+                <a href="#featured"> <i class="fas fa-arrow-right"></i> Membership </a>
+                <a href="#arrivals"> <i class="fas fa-arrow-right"></i> AboutUs </a>
+                <a href="#reviews"> <i class="fas fa-arrow-right"></i> Reviews </a>
+                <a href="#blogs"> <i class="fas fa-arrow-right"></i> StarsStory</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#"> <i class="fas fa-phone"></i>02166-222325</a>
+                <a href="#"> <i class="fas fa-phone"></i>+91 8975466534</a>
+                <a href="#"> <i class="fas fa-envelope"></i>sandhyaphranade0@gmail.com</a><br>
+                <h3>Address</h3>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>Mukund Plaza,Ded Chuak,Laxminagar,Phaltan,Maharashtra
+                    415523</a>
+
+            </div>
+        </div>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="credit"> created by <span>Vertex Study Point</span> | all rights reserved! </div>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- loader  -->
+
+    <div class="loader-container">
+        <img src="image/loader-img.gif" alt="">
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="../VertexWebsite/js/script.js"></script>
+
+</body>
+
+</html>
