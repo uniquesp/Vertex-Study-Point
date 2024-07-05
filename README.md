@@ -6,6 +6,7 @@ Welcome to Vertex Study Point, a comprehensive solution for managing reading hal
 
 Vertex Study Point is a software designed to automate the management of a reading hall. It addresses various issues present in the manual system, including seat availability, payment processing, snack ordering, and maintenance management.
 
+
 ### 🖥️ Proposed System Benefits
 
 - Maintains comprehensive student data.
