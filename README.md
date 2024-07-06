@@ -1,4 +1,4 @@
-# 📚 Vertex Study Point
+# ![Reading Hall Icon](https://img.icons8.com/ios-filled/50/000000/reading-room.png) Vertex Study Point
 
 Welcome to Vertex Study Point, a comprehensive solution for managing reading hall functionalities efficiently. This project automates various processes, ensuring a seamless experience for both administrators and students.
 
